@@ -1,10 +1,13 @@
 package com.trybe.acc.pessoausuaria;
 
+/**
+ * The type Pessoa Usuária.
+ */
 public class PessoaUsuaria extends Pessoa {
 
   public PessoaUsuaria(String name, String lastName) {
-  super.nome = name;
-  super.sobrenome = lastName;
+    super.nome = name;
+    super.sobrenome = lastName;
   }
 
   /**

@@ -5,10 +5,13 @@ package com.trybe.acc.recursoshumanos;
  */
 public class PessoaFuncionaria {
   private String nomeCompleto;
-  private String cpf;
+  private final String cpf;
   private String endereco;
   private double salario;
 
+  /**
+   * Construtor.
+   */
   public PessoaFuncionaria(String nomeCompleto, String cpf, String endereco, double salario) {
     this.nomeCompleto = nomeCompleto;
     this.cpf = cpf;
