@@ -2,8 +2,9 @@ package com.trybe.acc.pessoausuaria;
 
 public class PessoaUsuaria extends Pessoa {
 
-  public PessoaUsuaria() {
-
+  public PessoaUsuaria(String name, String lastName) {
+  super.nome = name;
+  super.sobrenome = lastName;
   }
 
   /**
@@ -11,6 +12,12 @@ public class PessoaUsuaria extends Pessoa {
    *
    */
   public String getPessoaUsuaria() {
-    return null;
+    if (nome == null || sobrenome == null) {
+      return "Pessoa usuária inválida";
+    }
+    if (nome.isEmpty() || sobrenome.isEmpty()) {
+      return "Pessoa usuária inválida";
+    }
+    return nome.toLowerCase() + "." + sobrenome.toLowerCase();
   }
 }
